@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#f6eff5">
+    <meta name="description" content="Siete canciones y siete razones para dedicártelas.">
+    <title>Songs to U ♡</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="hero"><span class="eyebrow">UNA PEQUEÑA COLECCIÓN PARA TI ♡</span>
+            <h1>Songs <em>to U.</em></h1>
+            <p>Spoiler: sí, es muy cursi, pero en la música se encuentran no solo los sonidos, sino la idea que se quiere transmitir. Te encuentro en más de 10 canciones, pero estas son algunas:</p>
+        </header>
+        <section aria-label="Galería de canciones" class="gallery" id="gallery"></section>
+        <footer>Como las fotos bonitas, hay canciones que quiero guardar para siempre ♡</footer>
+    </main>
+    <dialog id="song-dialog" aria-labelledby="dialog-title"><button class="close" id="close-dialog"
+            aria-label="Cerrar">×</button>
+        <div class="dialog-art" id="dialog-art"></div><span class="eyebrow">POR QUÉ ESTA CANCIÓN</span>
+        <h2 id="dialog-title"></h2>
+        <p class="artist" id="dialog-artist"></p>
+        <p class="reason" id="dialog-reason"></p>
+        <audio id="song-audio" controls preload="none" aria-label="Reproducir canción" hidden></audio>
+        <p id="audio-status" role="status"></p>
+        <a id="song-link" class="listen" target="_blank"
+            rel="noopener noreferrer">Escuchar canción ↗</a>
+    </dialog>
+    <script src="js/songs.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
